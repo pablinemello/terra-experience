@@ -120,6 +120,10 @@
     70%{box-shadow:0 0 0 9px rgba(230,88,79,0);}
     100%{box-shadow:0 0 0 0 rgba(230,88,79,0);}
   }
+  @keyframes blink-badge{
+    0%,100%{opacity:1;}
+    50%{opacity:0.15;}
+  }
 
   .photo{
     position:relative; overflow:hidden; border-radius:var(--radius);
@@ -359,7 +363,7 @@
         <p class="lead">Transformar um terreno no seu novo lar.</p>
 
         <div class="hero-badges">
-          <span class="badge-limited"><i class="dot"></i> Vagas limitadas</span>
+          <span class="badge-limited" style="animation:blink-badge .9s ease-in-out infinite;"><i class="dot"></i> Vagas limitadas</span>
           <span class="badge-limited">Confirme até 27/08</span>
         </div>
 

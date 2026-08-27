@@ -200,11 +200,11 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:48px 0
         <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(201,164,99,.1);border:1px solid rgba(201,164,99,.2);border-radius:100px;padding:6px 14px;font-size:.75rem;font-weight:600;color:#e7d5a6">👶 Recreação infantil</span>
       </div>
       <h1>Você tem um lote no Terrá.<br>Agora vem <em>a melhor parte.</em></h1>
-      <p class="hero-sub">Um sábado inteiro com arquitetos, construtoras e especialistas em crédito — reunidos só para quem já tem lote no Terrá. Você sai com tudo definido. Sem pagar nada.</p>
+      <p class="hero-sub">Um sábado inteiro com arquitetos, construtoras e especialistas em crédito — reunidos para proprietários e para quem está avaliando comprar no Terrá. Você sai com tudo definido. Sem pagar nada.</p>
 
       <div class="vac-pill">
         <div class="bdot"></div>
-        <div class="vac-text">Apenas <strong id="hero-rem">8</strong> vagas restantes — confirme antes que acabe</div>
+        <div class="vac-text">Apenas <strong id="hero-rem">20</strong> vagas restantes — confirme antes que acabe</div>
       </div>
 
       <div class="cdown" id="cdown">
@@ -267,9 +267,11 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:48px 0
     </div>
     <div class="fw-grid">
       <div class="fw-card"><div class="fw-ck">✓</div><div><h3>Você já tem um lote no Terrá</h3><p>E quer sair do "vou construir um dia" para o "já sei como e quando começar".</p></div></div>
+      <div class="fw-card"><div class="fw-ck">✓</div><div><h3>Você quer comprar no Terrá</h3><p>Ainda está decidindo, mas quer conhecer o projeto de perto, ver o empreendimento real e entender se é pra você.</p></div></div>
       <div class="fw-card"><div class="fw-ck">✓</div><div><h3>Ainda não sabe por onde começar</h3><p>Arquiteto, construtora, crédito… muitas perguntas e poucas respostas. O evento foi feito pra isso.</p></div></div>
       <div class="fw-card"><div class="fw-ck">✓</div><div><h3>Quer conhecer os profissionais certos</h3><p>Não qualquer empresa — os parceiros que já conhecem o Terrá e têm experiência no bairro.</p></div></div>
       <div class="fw-card"><div class="fw-ck">✓</div><div><h3>Não quer errar e perder dinheiro</h3><p>Uma decisão errada na construção atrasa anos. No evento, você aprende como evitar os erros antes de começar.</p></div></div>
+      <div class="fw-card"><div class="fw-ck">✓</div><div><h3>Quer ver o empreendimento de perto</h3><p>Sair da tela do computador e caminhar pelo Terrá de verdade — com especialistas do projeto ao lado para tirar todas as dúvidas.</p></div></div>
     </div>
   </div>
 </section>
@@ -345,7 +347,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:48px 0
     <h2>Não deixa pra última hora.</h2>
     <p style="font-size:1rem;color:rgba(244,239,226,.7);max-width:540px;margin:0 auto">Cada vaga é de uma única pessoa. Quando confirmar, o seu lugar está garantido. Quando esgotar, acabou.</p>
     <div style="margin:32px 0 40px;font-size:4rem;font-weight:900;color:#dc2626;line-height:1">
-      <span id="scar-r">8</span>
+      <span id="scar-r">20</span>
       <span style="font-size:1.5rem;font-weight:700;color:rgba(244,239,226,.7)"> vagas restantes</span>
     </div>
     <a href="https://forms.gle/xdx1hUshWYg9RkPt7" target="_blank" rel="noopener noreferrer" class="btn btn-red-xl">
@@ -380,7 +382,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:48px 0
       </div>
       <div class="fi">
         <div class="fq">Tenho interesse no Terrá mas ainda não comprei. Posso participar? <span class="fa-arrow">▼</span></div>
-        <div class="fa">Este evento é exclusivo para quem já é proprietário de lote no Terrá Urbanicidade Viva. Se você ainda não comprou mas tem interesse, fale com a SUM pelo WhatsApp: <a href="https://wa.me/5548984869425" style="color:#c9a463">48 98486-9425</a>.</div>
+        <div class="fa">Sim! O evento é aberto tanto para quem já tem lote quanto para quem está avaliando a compra. É a chance perfeita para conhecer o projeto de perto, ver o empreendimento real e tirar todas as dúvidas antes de decidir.</div>
       </div>
     </div>
   </div>
@@ -395,7 +397,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:48px 0
       <p>Gratuito. Exclusivo. Limitado a 100 vagas.<br>O próximo passo mais importante da sua construção está a um clique.</p>
       <div class="cta-badges">
         <div class="cbadge cbg">✓ 100% Gratuito</div>
-        <div class="cbadge cbr"><div class="bdot"></div>&nbsp;<span id="final-rem">8</span> vagas restantes</div>
+        <div class="cbadge cbr"><div class="bdot"></div>&nbsp;<span id="final-rem">20</span> vagas restantes</div>
         <div class="cbadge cbgo">⏱ 29/08 · Confirme até 27/08</div>
       </div>
       <a href="https://forms.gle/xdx1hUshWYg9RkPt7" target="_blank" rel="noopener noreferrer" class="btn btn-red-xl">
@@ -442,7 +444,7 @@ function cd(){
 setInterval(cd,1000);cd();
 
 // VACANCY COUNTER
-var TOTAL=20;
+var TOTAL=32;
 function setV(conf){
   var rem=Math.max(0,TOTAL-conf),pct=Math.round(conf/TOTAL*100);
   ['hero-rem','scar-r','final-rem'].forEach(function(id){var e=document.getElementById(id);if(e)e.textContent=rem;});

@@ -443,19 +443,8 @@ function cd(){
 }
 setInterval(cd,1000);cd();
 
-// VACANCY COUNTER
-var TOTAL=32;
-function setV(conf){
-  var rem=Math.max(0,TOTAL-conf),pct=Math.round(conf/TOTAL*100);
-  ['hero-rem','scar-r','final-rem'].forEach(function(id){var e=document.getElementById(id);if(e)e.textContent=rem;});
-}
-function fetchV(){
-  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTr0c_6PFNfRJEcsiuw1V4p52fEBFPeJxtMiRfLGif9FJuR8BmJrTOW2wgNOqe7QQLwGfoqRZCQ66lb/pub?output=csv&t='+Date.now())
-    .then(function(r){return r.text();})
-    .then(function(t){var rows=t.trim().split('\n').filter(function(r){return r.trim();});setV(Math.max(0,rows.length-1));})
-    .catch(function(){});
-}
-fetchV();setInterval(fetchV,90000);
+// VACANCY COUNTER — fixo
+['hero-rem','scar-r','final-rem'].forEach(function(id){var e=document.getElementById(id);if(e)e.textContent=20;});
 
 // FAQ
 document.querySelectorAll('.fi').forEach(function(item){
